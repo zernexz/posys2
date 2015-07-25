@@ -1,0 +1,1060 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4256981775/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4256981775.dir/build.make CMakeFiles/cmTryCompileExec4256981775.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4256981775.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4256981775.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4256981775
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4256981775.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4256981775.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4256981775 -rdynamic 
+CMakeFiles/cmTryCompileExec4256981775.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4256981775] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4256981775/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1597839761/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1597839761.dir/build.make CMakeFiles/cmTryCompileExec1597839761.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1597839761.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1597839761.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1597839761
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1597839761.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1597839761.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1597839761 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1597839761] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1597839761/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1557810893/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1557810893.dir/build.make CMakeFiles/cmTryCompileExec1557810893.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1557810893.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1557810893.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1557810893
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1557810893.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1557810893.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1557810893 -rdynamic 
+CMakeFiles/cmTryCompileExec1557810893.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1557810893] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1557810893/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1436363474/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1436363474.dir/build.make CMakeFiles/cmTryCompileExec1436363474.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1436363474.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1436363474.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1436363474
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1436363474.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1436363474.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1436363474 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1436363474] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1436363474/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4100271641/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4100271641.dir/build.make CMakeFiles/cmTryCompileExec4100271641.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4100271641.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4100271641.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4100271641
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4100271641.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4100271641.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4100271641 -rdynamic 
+CMakeFiles/cmTryCompileExec4100271641.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4100271641] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4100271641/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2206482458/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2206482458.dir/build.make CMakeFiles/cmTryCompileExec2206482458.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2206482458.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2206482458.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2206482458
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2206482458.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2206482458.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2206482458 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2206482458] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2206482458/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2631674702/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2631674702.dir/build.make CMakeFiles/cmTryCompileExec2631674702.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2631674702.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2631674702.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2631674702
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2631674702.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2631674702.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2631674702 -rdynamic 
+CMakeFiles/cmTryCompileExec2631674702.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2631674702] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2631674702/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec272885872/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec272885872.dir/build.make CMakeFiles/cmTryCompileExec272885872.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec272885872.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec272885872.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec272885872
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec272885872.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec272885872.dir/CheckFunctionExists.c.o  -o cmTryCompileExec272885872 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec272885872] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec272885872/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec420266517/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec420266517.dir/build.make CMakeFiles/cmTryCompileExec420266517.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec420266517.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec420266517.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec420266517
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec420266517.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec420266517.dir/CheckSymbolExists.c.o  -o cmTryCompileExec420266517 -rdynamic 
+CMakeFiles/cmTryCompileExec420266517.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec420266517] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec420266517/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec644854134/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec644854134.dir/build.make CMakeFiles/cmTryCompileExec644854134.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec644854134.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec644854134.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec644854134
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec644854134.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec644854134.dir/CheckFunctionExists.c.o  -o cmTryCompileExec644854134 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec644854134] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec644854134/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1541995597/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1541995597.dir/build.make CMakeFiles/cmTryCompileExec1541995597.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1541995597.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1541995597.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1541995597
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1541995597.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1541995597.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1541995597 -rdynamic 
+CMakeFiles/cmTryCompileExec1541995597.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1541995597] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1541995597/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1830233213/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1830233213.dir/build.make CMakeFiles/cmTryCompileExec1830233213.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1830233213.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1830233213.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1830233213
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1830233213.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1830233213.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1830233213 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1830233213] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1830233213/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3118171157/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3118171157.dir/build.make CMakeFiles/cmTryCompileExec3118171157.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3118171157.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3118171157.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3118171157
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3118171157.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3118171157.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3118171157 -rdynamic 
+CMakeFiles/cmTryCompileExec3118171157.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3118171157] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3118171157/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1418726248/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1418726248.dir/build.make CMakeFiles/cmTryCompileExec1418726248.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1418726248.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1418726248.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1418726248
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1418726248.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1418726248.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1418726248 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1418726248] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1418726248/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4284489934/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4284489934.dir/build.make CMakeFiles/cmTryCompileExec4284489934.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4284489934.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4284489934.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4284489934
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4284489934.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4284489934.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4284489934 -rdynamic 
+CMakeFiles/cmTryCompileExec4284489934.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4284489934] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4284489934/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2146546616/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2146546616.dir/build.make CMakeFiles/cmTryCompileExec2146546616.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2146546616.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2146546616.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2146546616
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2146546616.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2146546616.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2146546616 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2146546616] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2146546616/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec902136184/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec902136184.dir/build.make CMakeFiles/cmTryCompileExec902136184.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec902136184.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec902136184.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec902136184
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec902136184.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec902136184.dir/CheckSymbolExists.c.o  -o cmTryCompileExec902136184 -rdynamic 
+CMakeFiles/cmTryCompileExec902136184.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec902136184] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec902136184/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2003610337/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2003610337.dir/build.make CMakeFiles/cmTryCompileExec2003610337.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2003610337.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2003610337.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2003610337
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2003610337.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2003610337.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2003610337 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2003610337] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2003610337/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2242724094/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2242724094.dir/build.make CMakeFiles/cmTryCompileExec2242724094.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2242724094.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2242724094.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2242724094
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2242724094.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2242724094.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2242724094 -rdynamic 
+CMakeFiles/cmTryCompileExec2242724094.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2242724094] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2242724094/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2428922209/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2428922209.dir/build.make CMakeFiles/cmTryCompileExec2428922209.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2428922209.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2428922209.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2428922209
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2428922209.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2428922209.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2428922209 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2428922209] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2428922209/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1084495525/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1084495525.dir/build.make CMakeFiles/cmTryCompileExec1084495525.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1084495525.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1084495525.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1084495525
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1084495525.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1084495525.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1084495525 -rdynamic 
+CMakeFiles/cmTryCompileExec1084495525.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1084495525] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1084495525/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2256873716/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2256873716.dir/build.make CMakeFiles/cmTryCompileExec2256873716.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2256873716.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2256873716.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2256873716
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2256873716.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2256873716.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2256873716 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2256873716] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2256873716/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1864247396/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1864247396.dir/build.make CMakeFiles/cmTryCompileExec1864247396.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1864247396.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1864247396.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1864247396
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1864247396.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1864247396.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1864247396 -rdynamic 
+CMakeFiles/cmTryCompileExec1864247396.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1864247396] Error 1
+make: *** [cmTryCompileExec1864247396/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3572920469/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3572920469.dir/build.make CMakeFiles/cmTryCompileExec3572920469.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3572920469.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3572920469.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3572920469
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3572920469.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3572920469.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3572920469 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3572920469] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3572920469/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1595873158/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1595873158.dir/build.make CMakeFiles/cmTryCompileExec1595873158.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1595873158.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1595873158.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1595873158
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1595873158.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1595873158.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1595873158 -rdynamic 
+CMakeFiles/cmTryCompileExec1595873158.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1595873158] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1595873158/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec841369384/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec841369384.dir/build.make CMakeFiles/cmTryCompileExec841369384.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec841369384.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec841369384.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec841369384
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec841369384.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec841369384.dir/CheckFunctionExists.c.o  -o cmTryCompileExec841369384 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec841369384] Error 1
+make: *** [cmTryCompileExec841369384/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1348507465/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1348507465.dir/build.make CMakeFiles/cmTryCompileExec1348507465.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1348507465.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1348507465.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1348507465
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1348507465.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1348507465.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1348507465 -rdynamic 
+CMakeFiles/cmTryCompileExec1348507465.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1348507465] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1348507465/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec328935361/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec328935361.dir/build.make CMakeFiles/cmTryCompileExec328935361.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec328935361.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec328935361.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec328935361
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec328935361.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec328935361.dir/CheckFunctionExists.c.o  -o cmTryCompileExec328935361 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec328935361] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec328935361/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1084920939/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1084920939.dir/build.make CMakeFiles/cmTryCompileExec1084920939.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1084920939.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1084920939.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1084920939
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1084920939.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1084920939.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1084920939 -rdynamic 
+CMakeFiles/cmTryCompileExec1084920939.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1084920939] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1084920939/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2908533880/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2908533880.dir/build.make CMakeFiles/cmTryCompileExec2908533880.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2908533880.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2908533880.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2908533880
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2908533880.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2908533880.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2908533880 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2908533880] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2908533880/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2166489090/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2166489090.dir/build.make CMakeFiles/cmTryCompileExec2166489090.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2166489090.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2166489090.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2166489090
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2166489090.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2166489090.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2166489090 -rdynamic 
+CMakeFiles/cmTryCompileExec2166489090.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2166489090] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2166489090/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4206822864/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4206822864.dir/build.make CMakeFiles/cmTryCompileExec4206822864.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4206822864.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4206822864.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4206822864
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4206822864.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4206822864.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4206822864 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4206822864] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4206822864/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3138780416/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3138780416.dir/build.make CMakeFiles/cmTryCompileExec3138780416.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3138780416.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3138780416.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3138780416
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3138780416.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3138780416.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3138780416 -rdynamic 
+CMakeFiles/cmTryCompileExec3138780416.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3138780416] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3138780416/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2374117047/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2374117047.dir/build.make CMakeFiles/cmTryCompileExec2374117047.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2374117047.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2374117047.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2374117047
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2374117047.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2374117047.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2374117047 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2374117047] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2374117047/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3527480744/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3527480744.dir/build.make CMakeFiles/cmTryCompileExec3527480744.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3527480744.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3527480744.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3527480744
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3527480744.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3527480744.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3527480744 -rdynamic 
+CMakeFiles/cmTryCompileExec3527480744.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3527480744] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3527480744/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4243787628/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4243787628.dir/build.make CMakeFiles/cmTryCompileExec4243787628.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4243787628.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4243787628.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4243787628
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4243787628.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4243787628.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4243787628 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4243787628] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4243787628/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3823523288/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3823523288.dir/build.make CMakeFiles/cmTryCompileExec3823523288.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3823523288.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3823523288.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3823523288
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3823523288.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3823523288.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3823523288 -rdynamic 
+CMakeFiles/cmTryCompileExec3823523288.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3823523288] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3823523288/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3609836086/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3609836086.dir/build.make CMakeFiles/cmTryCompileExec3609836086.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3609836086.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3609836086.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3609836086
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3609836086.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3609836086.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3609836086 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3609836086] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3609836086/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3756344851/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3756344851.dir/build.make CMakeFiles/cmTryCompileExec3756344851.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3756344851.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3756344851.dir/CheckSymbolExists.c.o   -c /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3756344851
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3756344851.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3756344851.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3756344851 -rdynamic 
+CMakeFiles/cmTryCompileExec3756344851.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3756344851] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3756344851/fast] Error 2
+
+File /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2271050631/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2271050631.dir/build.make CMakeFiles/cmTryCompileExec2271050631.dir/build
+make[1]: Entering directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2271050631.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2271050631.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2271050631
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2271050631.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2271050631.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2271050631 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2271050631] Error 1
+make[1]: Leaving directory `/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2271050631/fast] Error 2
+
+

@@ -1,0 +1,1 @@
+/home/ryouma/opencv-2.4.9/samples/cpp/posys/CMakeFiles/posys.dir
