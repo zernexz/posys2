@@ -1,0 +1,319 @@
+#ifndef VOL_H
+#define VOL_H
+
+#include "utils.h"
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/vector.hpp>
+#include <boost/serialization/map.hpp>
+#include <boost/serialization/utility.hpp>
+
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <string>
+#include <random>
+#include <cmath>
+#include <ctime>
+
+#include <opencv2/calib3d/calib3d.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/legacy/compat.hpp>
+
+#ifndef NOT_USE
+#define NOT_USE 2<<20
+#endif
+
+//#define VOL_IDX
+
+using namespace std;
+using namespace cv;
+
+template < typename FP >
+class Vol{
+private:
+
+public:
+	int sx;
+	int sy;
+	int depth;
+	vector<FP> w;
+	vector<FP> dw;
+
+#ifdef VOL_IDX
+	int* idx__mul_sx;
+	//int* idx__mul_d;
+#endif
+
+
+	Vol(int sx,int sy,int depth,FP c=NOT_USE):sx(sx),sy(sy),depth(depth){
+
+		clock_t begin_time = clock();
+
+		Utils<FP> ut;
+		int n = sx*sy*depth;
+		w = ut.zeros(n);
+		dw = ut.zeros(n);
+		if(c == NOT_USE){
+			FP scale = sqrt(1.0f/(sx*sy*depth));
+			for(int i=0;i<n;i++){
+				w[i] = ut.randn(0.0f,scale);
+			}
+		} else {
+			for(int i=0;i<n;i++)
+				w[i] = c;
+		}
+
+
+#ifdef VOL_IDX
+		//do idxing
+
+		
+
+		//idxing for sx
+		this->idx__mul_sx = new int[this->sy];
+		this->idx__mul_sx[0]=0;
+		for(int i=1;i<this->sy;i++){
+			this->idx__mul_sx[i]=this->idx__mul_sx[i-1]+this->sx;
+		}
+
+		//idxing for d
+		/*int n_d=this->sy*this->sx;
+		this->idx__mul_d = new int[n_d];
+		this->idx__mul_d[0]=0;
+		for(int i=1;i<n_d;i++){
+			this->idx__mul_d[i]=this->idx__mul_d[i-1]+this->depth;
+		}*/
+
+		
+#endif
+		//std::cout << "Vol : " << float( clock () - begin_time ) /  CLOCKS_PER_SEC << endl;
+		
+	}
+	~Vol(){
+		this->w.clear();
+		this->dw.clear();
+#ifdef VOL_IDX
+		delete this->idx__mul_sx;
+		//delete this->idx__mul_d;
+#endif
+	}
+
+#ifndef VOL_IDX
+	FP get(int x , int y , int d){
+		int ix = ((this->sx * y)+x)*this->depth + d;
+		return this->w[ix];
+	}
+	void set(int x , int y , int d , FP v){
+		int ix = ((this->sx * y)+x)*this->depth + d;
+		this->w[ix] = v;
+	}
+	void add(int x , int y , int d , FP v){
+		int ix = ((this->sx * y)+x)*this->depth + d;
+		this->w[ix] += v;
+	}
+	FP get_grad(int x , int y , int d){
+		int ix = ((this->sx * y)+x)*this->depth + d;
+		return this->dw[ix];
+	}
+	void set_grad(int x , int y , int d , FP v){
+		int ix = ((this->sx * y)+x)*this->depth + d;
+		this->dw[ix] = v; 
+	}
+	void add_grad(int x , int y , int d , FP v){
+		int ix = ((this->sx * y)+x)*this->depth + d;
+		this->dw[ix] += v; 
+	}
+#endif
+
+#ifdef VOL_IDX
+	FP get(int x , int y , int d){
+		int ix = ( this->idx__mul_sx[y]+x )*this->depth + d;
+		return this->w[ix];
+	}
+	void set(int x , int y , int d , FP v){
+		int ix = ( this->idx__mul_sx[y]+x )*this->depth + d;
+		this->w[ix] = v;
+	}
+	void add(int x , int y , int d , FP v){
+		int ix = ( this->idx__mul_sx[y]+x )*this->depth + d;
+		this->w[ix] += v;
+	}
+	FP get_grad(int x , int y , int d){
+		int ix = ( this->idx__mul_sx[y]+x )*this->depth + d;
+		return this->dw[ix];
+	}
+	void set_grad(int x , int y , int d , FP v){
+		int ix = ( this->idx__mul_sx[y]+x )*this->depth + d;
+		this->dw[ix] = v; 
+	}
+	void add_grad(int x , int y , int d , FP v){
+		int ix = ( this->idx__mul_sx[y]+x )*this->depth + d;
+		this->dw[ix] += v; 
+	}
+#endif
+	Vol<FP>* cloneAndZero(){
+		return new Vol<FP>(this->sx,this->sy,this->depth,FP(0));
+	}
+	
+	Vol<FP>* clone(){
+		Vol<FP>* V = new Vol<FP>(this->sx,this->sy,this->depth,FP(0));
+		int n = this->w.size();
+		for(int i=0;i<n;i++){ V->w[i] = this->w[i]; }
+		return V;
+	}
+	
+	void addFrom(const Vol<FP> & V){
+		for(int k=0;k<this->w.size();k++){
+			this->w[k] += V.w[k];
+		}
+	}
+
+	void addFromScaled(const Vol<FP> & V ,FP a){
+		for(int k=0;k<this->w.size();k++){
+			this->w[k] += a*V.w[k];
+		}
+	}
+
+	void setConst(FP a){
+		for(int k=0;k<this->w.size();k++){
+			this->w[k] = a;
+		}
+	}
+
+	//Serialize
+	//Deserialize
+
+
+
+	static Vol<FP>* augment(Vol<FP>& V , int crop , int dx = NOT_USE , int dy  = NOT_USE , bool fliplr = false){
+		Utils<FP> ut;
+		if(dx == NOT_USE){
+			dx = ut.randi(0, V.sx - crop);
+		}
+		if(dy == NOT_USE){
+			dy = ut.randi(0, V.sy - crop);
+		}
+		Vol<FP>* W;
+		if(crop != V.sy || dx != 0 || dy != 0){
+			W = new Vol<FP>(crop , crop , V.depth , 0.0);
+			for(int x=0;x<crop;x++){
+				for(int y=0;y<crop;y++){
+					if( x+dx<0 || x+dx>=V.sx || y+dy<0 || y+dy>=V.sy ){ cout << "WTF" << endl; continue; }//oob
+					for(int d=0;d<V.depth;d++){
+						FP val=V.get(x+dx,y+dy,d);
+						W->set(x,y,d,val);
+					}
+				}
+			}
+		} else {
+			delete W;
+			W = V.clone();
+		}
+		
+		if(fliplr) {
+			//flip horizontally
+			Vol<FP>* W2 = W->cloneAndZero();
+			for(int x=0;x<W->sx;x++){
+				for(int y=0;y<W->sy;y++){
+					for(int d=0;d<W->depth;d++){
+						W2->set(x,y,d,W->get(W->sx-x-1,y,d));
+					}
+				}
+			}
+			delete W;
+			W = W2;
+		}
+		return W;
+	}
+
+
+	static Vol<FP>* mat_to_vol(Mat img,bool convert_grayscale = false){
+
+		Mat rgba;
+		cv::cvtColor(img, rgba, CV_BGR2BGRA, 4);
+		int W = rgba.cols;
+		int H = rgba.rows;
+		Vol<FP>* x = new Vol<FP>(W,H,4,FP(0.0));
+		for(int i=0;i<H;i++){
+			for(int j=0;j<W;j++){	
+				for(int k=0;k<4;k++){
+					FP p=rgba.data[(i*W+j)*4+k];
+					x->set(j,i,k, (p/255.0)-0.5  );
+				}
+			}
+		}
+		if(convert_grayscale){
+			Vol<FP>* x1 = new Vol<FP>(W,H,1,FP(0));
+			for(int i=0;i<H;i++){
+				for(int j=0;j<W;j++){
+					FP gray=(x->get(j,i,0)+x->get(j,i,1)+x->get(j,i,2))/3;
+					x1->set(j,i,0,gray);
+				}
+			}
+			delete x;
+			x = x1;
+		}
+		return x;
+	}
+
+	Mat npho_to_mat(){
+		Mat img;
+		if(this->depth==1){
+			Mat t1(this->sy, this->sx, CV_8UC1);
+			img=t1;
+		}
+		else if(this->depth==2){
+			Mat t1(this->sy, this->sx, CV_8UC2);
+			img=t1;
+		}
+		else if(this->depth>=3){
+			Mat t1(this->sy, this->sx, CV_8UC3);
+			img=t1;
+		}
+
+		//cout << "3" << endl;
+		for(int i=0;i<img.rows;i++){
+			for(int j=0;j<img.cols;j++){
+				for(int k=0;k<img.channels();k++){ //cout << "3.1" << endl;
+					FP p=this->get(j,i,k);//cout << "3.2" << endl;
+					img.data[((i*img.cols)+j)*img.channels()+k]= (uint8_t) ((p+0.5)*255);
+				}
+			}
+		}
+		return img;
+	}
+	
+	Mat po_to_mat(){
+		Mat img;
+		if(this->depth==1){
+			Mat t1(this->sy, this->sx, CV_8UC1);
+			img=t1;
+		}
+		else if(this->depth==2){
+			Mat t1(this->sy, this->sx, CV_8UC2);
+			img=t1;
+		}
+		else if(this->depth>=3){
+			Mat t1(this->sy, this->sx, CV_8UC3);
+			img=t1;
+		}
+
+		//cout << "3" << endl;
+		for(int i=0;i<img.rows;i++){
+			for(int j=0;j<img.cols;j++){
+				for(int k=0;k<img.channels();k++){ //cout << "3.1" << endl;
+					FP p=this->get(j,i,k);//cout << "3.2" << endl;
+					img.data[((i*img.cols)+j)*img.channels()+k]= (uint8_t) ((p)*255);
+				}
+			}
+		}
+		return img;
+	}
+
+
+};
+
+#endif
