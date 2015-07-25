@@ -1,0 +1,1 @@
+input[sx:32,sy:32,depth:3]>conv[sx:7,filters:128,stride:1,pad:2]>relu[]>pool[sx:3,sy:3,stride:2]>conv[sx:7,filters:128,stride:1,pad:2]>relu[]>pool[sx:2,sy:2,stride:1]>fc[num_neurons:20]>softmax[]
