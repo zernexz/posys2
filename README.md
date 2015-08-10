@@ -49,10 +49,10 @@ Importance Function in main.cpp
  - read_file_binary()  
  - renderCube()
  - selfcalib()
- - selfcalib_dummy()
+ - selfcalib_dummy() find calibration mark << ***
  - sortCorners()
  - str_concat()
- - task1()
+ - task1() used for beagle bone communication << ***
  - unDist()
  - writeMat()
  - write_file_binary()
